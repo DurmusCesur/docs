@@ -1,33 +1,20 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: 'In this section, you will find a guide. 
+
+
+Shapely uses a geometric language similar to Desingscript. However, unlike Dynamo, you do not need to convert each operation into geometry afterwards, so it handles even complex geometries very quickly.
+In doing so, there is absolutely **no geometric loss between the transformations**.' 
 ---
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+Only the definition of geometry has changed. 
 </Note>
+### An example of transformations
+<Frame>
+  <img src="/images/Donusumler.png" 
+  style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
-
-## Authentication
-
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
-
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```

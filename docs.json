@@ -30,15 +30,15 @@
         "tab": "Documentation",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Shapely Guide",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Conversation",
             "pages": [
-              "api-reference/endpoint/get",
+              "api-reference/endpoint/Dynamo→Shapely",
               "api-reference/endpoint/create",
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
