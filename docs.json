@@ -73,11 +73,11 @@
             "group": "Operation",
             "pages": 
             [
-              "api-reference/Operations/Dynamo→Shapely",
-              "api-reference/Operations/Shapely→Dynamo",
-              "api-reference/Operations/Shapely→Numpy",
-              "api-reference/Operations/Numpy→Shapely",
-              "api-reference/Operations/GeoJSON→Shapely"
+              "api-reference/Operation/Dynamo→Shapely",
+              "api-reference/Operation/Shapely→Dynamo",
+              "api-reference/Operation/Shapely→Numpy",
+              "api-reference/Operation/Numpy→Shapely",
+              "api-reference/Operation/GeoJSON→Shapely"
             ]
           }
         ]
