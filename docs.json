@@ -31,17 +31,53 @@
         "groups": [
           {
             "group": "Shapely Guide",
-            "pages": [
+            "pages": 
+            [
               "api-reference/introduction"
             ]
           },
           {
             "group": "Conversation",
-            "pages": [
-              "api-reference/endpoint/Dynamo→Shapely",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+            "pages": 
+            [
+              "api-reference/Conversation/Dynamo→Shapely",
+              "api-reference/Conversation/Shapely→Dynamo",
+              "api-reference/Conversation/Shapely→Numpy",
+              "api-reference/Conversation/Numpy→Shapely",
+              "api-reference/Conversation/GeoJSON→Shapely"
+            ]
+          },
+          {
+            "group": "Create",
+            "pages": 
+            [
+              "api-reference/Create/Dynamo→Shapely",
+              "api-reference/Create/Shapely→Dynamo",
+              "api-reference/Create/Shapely→Numpy",
+              "api-reference/Create/Numpy→Shapely",
+              "api-reference/Create/GeoJSON→Shapely"
+            ]
+          },
+          {
+            "group": "Modifier",
+            "pages": 
+            [
+              "api-reference/Modifier/Dynamo→Shapely",
+              "api-reference/Modifier/Shapely→Dynamo",
+              "api-reference/Modifier/Shapely→Numpy",
+              "api-reference/Modifier/Numpy→Shapely",
+              "api-reference/Modifier/GeoJSON→Shapely"
+            ]
+          },
+          {
+            "group": "Operation",
+            "pages": 
+            [
+              "api-reference/Operations/Dynamo→Shapely",
+              "api-reference/Operations/Shapely→Dynamo",
+              "api-reference/Operations/Shapely→Numpy",
+              "api-reference/Operations/Numpy→Shapely",
+              "api-reference/Operations/GeoJSON→Shapely"
             ]
           }
         ]
