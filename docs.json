@@ -51,11 +51,13 @@
             "group": "Create",
             "pages": 
             [
-              "api-reference/Create/Dynamo→Shapely",
-              "api-reference/Create/Shapely→Dynamo",
-              "api-reference/Create/Shapely→Numpy",
-              "api-reference/Create/Numpy→Shapely",
-              "api-reference/Create/GeoJSON→Shapely"
+              "api-reference/Create/Shp_Buffer",
+              "api-reference/Create/Shp_Snap",
+              "api-reference/Create/Shp_ConvexHull",
+              "api-reference/Create/Shp_Triangulate",
+              "api-reference/Create/Shp_Voronoi",
+              "api-reference/Create/Shp_Polygonise"
+
             ]
           },
           {
