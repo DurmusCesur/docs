@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "palm",
   "name": "Shapely",
   "colors": {
     "primary": "#16A34A",
@@ -8,20 +8,15 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
-  "navigation": 
-  {
-    "tabs": 
-    [
+  "navigation": {
+    "tabs": [
       {
         "tab": "Shapely",
-        "groups": 
-        [
+        "groups": [
           {
             "group": " ",
             "pages": [
-              " ",
-              " ",
-              " "
+              "/index"
             ]
           }
         ]
@@ -31,59 +26,58 @@
         "groups": [
           {
             "group": "Shapely Guide",
-            "pages": 
-            [
+            "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Conversation",
-            "pages": 
-            [
-              "api-reference/Conversation/Dynamo→Shapely",
-              "api-reference/Conversation/Shapely→Dynamo",
-              "api-reference/Conversation/Shapely→Numpy",
-              "api-reference/Conversation/Numpy→Shapely",
-              "api-reference/Conversation/GeoJSON→Shapely"
-            ]
-          },
-          {
-            "group": "Create",
-            "pages": 
-            [
-              "api-reference/Create/Shp_Buffer",
-              "api-reference/Create/Shp_Snap",
-              "api-reference/Create/Shp_ConvexHull",
-              "api-reference/Create/Shp_Triangulate",
-              "api-reference/Create/Shp_Voronoi",
-              "api-reference/Create/Shp_Polygonise"
-
-            ]
-          },
-          {
-            "group": "Modifier",
-            "pages": 
-            [
-              "api-reference/Modifier/Shp_Difference",
-              "api-reference/Modifier/Shp_Intersection",
-              "api-reference/Modifier/Shp_RevDifference",
-              "api-reference/Modifier/Shp_Union",
-              "api-reference/Modifier/Shp_Rotate",
-              "api-reference/Modifier/Shp_RotateSkew",
-              "api-reference/Modifier/Shp_Scale",
-              "api-reference/Modifier/Shp_Offset",
-              "api-reference/Modifier/Shp_Split"
-            ]
-          },
-          {
-            "group": "Operation",
-            "pages": 
-            [
-              "api-reference/Operation/Dynamo→Shapely",
-              "api-reference/Operation/Shapely→Dynamo",
-              "api-reference/Operation/Shapely→Numpy",
-              "api-reference/Operation/Numpy→Shapely",
-              "api-reference/Operation/GeoJSON→Shapely"
+            "group": "Geometry",
+            "pages": [
+              {
+                "group": "Conversion",
+                "pages": [
+                  "api-reference/Conversation/Dynamo→Shapely",
+                  "api-reference/Conversation/Shapely→Dynamo",
+                  "api-reference/Conversation/Shapely→Numpy",
+                  "api-reference/Conversation/Numpy→Shapely",
+                  "api-reference/Conversation/GeoJSON→Shapely"
+                ]
+              },
+              {
+                "group": "Create",
+                "pages": [
+                  "api-reference/Create/Shp_Buffer",
+                  "api-reference/Create/Shp_Snap",
+                  "api-reference/Create/Shp_ConvexHull",
+                  "api-reference/Create/Shp_Triangulate",
+                  "api-reference/Create/Shp_Voronoi",
+                  "api-reference/Create/Shp_Polygonise"
+                ]
+              },
+              {
+                "group": "Modifier",
+                "pages": [
+                  "api-reference/Modifier/Shp_Difference",
+                  "api-reference/Modifier/Shp_Intersection",
+                  "api-reference/Modifier/Shp_RevDifference",
+                  "api-reference/Modifier/Shp_Union",
+                  "api-reference/Modifier/Shp_Rotate",
+                  "api-reference/Modifier/Shp_RotateSkew",
+                  "api-reference/Modifier/Shp_Scale",
+                  "api-reference/Modifier/Shp_Offset",
+                  "api-reference/Modifier/Shp_Split"
+                ]
+              },
+              {
+                "group": "Operation",
+                "pages": [
+                  "api-reference/Operation/Dynamo→Shapely",
+                  "api-reference/Operation/Shapely→Dynamo",
+                  "api-reference/Operation/Shapely→Numpy",
+                  "api-reference/Operation/Numpy→Shapely",
+                  "api-reference/Operation/GeoJSON→Shapely"
+                ]
+              }
             ]
           }
         ]
