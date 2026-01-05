@@ -84,16 +84,15 @@
                   "api-reference/Operation/Shp_Length",
                   "api-reference/Operation/Shp_NearestPoint",
                   "api-reference/Operation/Shp_Oriented",
-                  "api-reference/Operation/Shp_Perimeter",                
+                  "api-reference/Operation/Shp_Perimeter",
                   "api-reference/Operation/Shp_PerimeterInterior",
-                  "api-reference/Operation/Shp_Segmentize", 
+                  "api-reference/Operation/Shp_Segmentize",
                   "api-reference/Operation/Shp_SkeletonPruning",
                   "api-reference/Operation/Shp_SharedPaths",
                   "api-reference/Operation/Shp_Simplify",
                   "api-reference/Operation/Shp_ShortLine",
                   "api-reference/Operation/Shp_Touches",
                   "api-reference/Operation/Shp_TouchesByDistance"
-
                 ]
               }
             ]
