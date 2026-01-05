@@ -1,0 +1,762 @@
+{
+  "Uuid": "f1aeb4b1-c443-431a-bc03-b22835008794",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Shp_SharedPath",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "7bb603bb1f3945238f9bee6745b69fca",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "8b8212c1a4ad470881ab23be9543f786",
+          "Name": "width",
+          "Description": "Largeur du rectangle\n\ndouble\nValeur par défaut : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e1fc394d024c421395835f8dc2a45aab",
+          "Name": "length",
+          "Description": "Longueur du rectangle\n\ndouble\nValeur par défaut : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a8498cad7dc94dfc866b0bc76991b4c1",
+          "Name": "Rectangle",
+          "Description": "Rectangle créé par la largeur et la longueur",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Rectangle.ByWidthLength@double,double",
+      "Replication": "Auto",
+      "Description": "Créer un rectangle centré au niveau de l'origine du SCG dans le plan XY du SCG, avec la largeur (longueur de l'axe X) et la longueur (longueur de l'axe Y) spécifiées.\n\nRectangle.ByWidthLength (width: double = 1, length: double = 1): Rectangle"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "Id": "c9124a8403b1463f9c3c81fad9730609",
+      "NodeType": "CodeBlockNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "6b22998ffae04670a73aafc23b626de9",
+          "Name": "",
+          "Description": "x",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9a4ec38d4aa0451fb1f0ae1effa8a4de",
+          "Name": "",
+          "Description": "Valeur de l'expression à la ligne 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Permet de créer le code DesignScript directement",
+      "Code": "x = 10;\n5;"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "8e12e38b80f5454f90a2b4b5e5fafedc",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "fa108de097b24ef2a80ae73c772877d1",
+          "Name": "geometry",
+          "Description": "Autodesk.DesignScript.Geometry.Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "75268911de6a4c7b9574a203d0674b4d",
+          "Name": "xTranslation",
+          "Description": "Déplacement le long de l'axe X.\n\ndouble\nValeur par défaut : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ecad44140e694e9291b0272dee0e695d",
+          "Name": "yTranslation",
+          "Description": "Déplacement le long de l'axe Y.\n\ndouble\nValeur par défaut : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "17cf336518d8467b83d5184b7a96ad3e",
+          "Name": "zTranslation",
+          "Description": "Déplacement le long de l'axe Z.\n\ndouble\nValeur par défaut : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ca95ef40fd32480aa3da9131a7d0d2b8",
+          "Name": "Geometry",
+          "Description": "Géométrie transformée.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Geometry.Translate@double,double,double",
+      "Replication": "Auto",
+      "Description": "Convertit toute géométrie donnée en fonction des déplacements indiqués dans les directions X, Y et Z définies dans le SCG.\n\nGeometry.Translate (xTranslation: double = 0, yTranslation: double = 0, zTranslation: double = 0): Geometry"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "4f5d828acc594f73b4b14e52abd79c01",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "7444ca7ac68c44189dd0f2dbe9712d29",
+          "Name": "closedCurve",
+          "Description": "Courbe fermée utilisée comme limite de surface\n\nCurve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b66571cc8a0a4441b76f5003aaac6235",
+          "Name": "Surface",
+          "Description": "Surface créée par correction",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Surface.ByPatch@Autodesk.DesignScript.Geometry.Curve",
+      "Replication": "Auto",
+      "Description": "Créer une surface en remplissant l'intérieur d'un contour fermé défini par les Curves d'entrée.\n\nSurface.ByPatch (closedCurve: Curve): Surface"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "1c026b9e0ad840e6aaed0483c8109203",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "280e926433564b6281cefd8e3c74fcf2",
+          "Name": "closedCurve",
+          "Description": "Courbe fermée utilisée comme limite de surface\n\nCurve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ebac195bcdcb4f01864e14da045f1670",
+          "Name": "Surface",
+          "Description": "Surface créée par correction",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Surface.ByPatch@Autodesk.DesignScript.Geometry.Curve",
+      "Replication": "Auto",
+      "Description": "Créer une surface en remplissant l'intérieur d'un contour fermé défini par les Curves d'entrée.\n\nSurface.ByPatch (closedCurve: Curve): Surface"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "280a37da-1a5d-4b12-87ed-bdaeb924461d",
+      "FunctionType": "Graph",
+      "Id": "77c3152745a146a4b88857d1a882561a",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "f729c0abec044b179f6986b5034acf92",
+          "Name": "_DynGeometry",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e9f8defcacc442bcb98c5d2f06f0e81d",
+          "Name": "_ShpGeometry",
+          "Description": "valeur de retour",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Converts Dynamo geometry to Shapely geometry."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "280a37da-1a5d-4b12-87ed-bdaeb924461d",
+      "FunctionType": "Graph",
+      "Id": "1fc066813c6d4be3b6192df2d789a719",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "cff9a0e0f89f420bb2c20dc03580b3ae",
+          "Name": "_DynGeometry",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a6f291bf8bd142e8aac8275b9636d010",
+          "Name": "_ShpGeometry",
+          "Description": "valeur de retour",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Converts Dynamo geometry to Shapely geometry."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "3b6ddd8b-fd2e-4afd-8f82-ddeb19e1c420",
+      "FunctionType": "Graph",
+      "Id": "acc0b78018cc4eb188c119b4d3303796",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "8b337f616a3c42f1a1c5ebe4078d330b",
+          "Name": "_ShpGeometry",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "17f8363d5d8a4560a020d860cfba12bb",
+          "Name": "_ShpGeometry",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5424faa7143e40b2ab5638a26b9a45f9",
+          "Name": "_ShpGeometry",
+          "Description": "valeur de retour",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Determines the common paths (or intersections of paths) between two geometries. This operation is used to find common edges or connections."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "67213d40-841d-4b3d-9a3a-6371f965a4b3",
+      "FunctionType": "Graph",
+      "Id": "d7db4b45bb444636b39ab169435e4ae6",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "3e0505d040394a23be57986ae7742c01",
+          "Name": "_ShpGeometry",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a90aa755c1e3414faee04c8cf8981e0e",
+          "Name": "_DynGeometry",
+          "Description": "valeur de retour",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Converts Shapely geometry to Dynamo geometry."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "1935c6d198504e1c84d0cd2d65da195c",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "babb731224e64b00844068c4a4b21813",
+          "Name": "geometry",
+          "Description": "La géométrie à laquelle vous souhaitez appliquer une couleur.\n\nGeometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c610d79ad3c84b2693808d94dad57adc",
+          "Name": "color",
+          "Description": "La couleur.\n\nColor",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3afbaf09fda447d29cbd69c321f1e184",
+          "Name": "GeometryColor",
+          "Description": "Un objet d'affichage.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Modifiers.GeometryColor.ByGeometryColor@Autodesk.DesignScript.Geometry.Geometry,DSCore.Color",
+      "Replication": "Auto",
+      "Description": "Afficher la géométrie à l'aide d'une couleur.\n\nGeometryColor.ByGeometryColor (geometry: Geometry, color: Color): GeometryColor"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
+      "InputValue": {
+        "R": 255,
+        "G": 0,
+        "B": 0,
+        "A": 255
+      },
+      "Id": "20bfc99d36e440a08eed80f20a14ea92",
+      "NodeType": "ColorInputNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b7e82f892dd24327a25ed42cd3930dca",
+          "Name": "Color",
+          "Description": "Selected Color.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Sélectionner une couleur dans la palette"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "WatchWidth": 420.0,
+      "WatchHeight": 38.0,
+      "Id": "510ff804f344465ab61dab1981964c8b",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "71e7da29e33c421cba72829179eec5b7",
+          "Name": "",
+          "Description": "Afficher la sortie de ce noeud",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "029ca909d2bb468d8e39d12ff0139de6",
+          "Name": "",
+          "Description": "Sortie du noeud",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualiser la sortie du noeud"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "WatchWidth": 233.0,
+      "WatchHeight": 193.0,
+      "Id": "385f7667b4664eaf846a6f95d95989cb",
+      "NodeType": "ExtensionNode",
+      "Inputs": [
+        {
+          "Id": "a3ef638b56634e6494431c0d1fc8c22b",
+          "Name": "",
+          "Description": "Afficher la sortie de ce noeud",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4f44f5348dd9468d85303220ca1fa04c",
+          "Name": "",
+          "Description": "Sortie du noeud",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualiser la sortie du noeud"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "a8498cad7dc94dfc866b0bc76991b4c1",
+      "End": "fa108de097b24ef2a80ae73c772877d1",
+      "Id": "04b9666d39a447bfad6220cde87d1ce7",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a8498cad7dc94dfc866b0bc76991b4c1",
+      "End": "7444ca7ac68c44189dd0f2dbe9712d29",
+      "Id": "0ad2686997814e3fbac8e5d6aeaa3232",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6b22998ffae04670a73aafc23b626de9",
+      "End": "8b8212c1a4ad470881ab23be9543f786",
+      "Id": "a920ff350ec0436389509946aa9f8578",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6b22998ffae04670a73aafc23b626de9",
+      "End": "e1fc394d024c421395835f8dc2a45aab",
+      "Id": "a55894980679468d96fe95c8665e707f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9a4ec38d4aa0451fb1f0ae1effa8a4de",
+      "End": "ecad44140e694e9291b0272dee0e695d",
+      "Id": "7fee7608c4974db8bcee0ab09cb296e7",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ca95ef40fd32480aa3da9131a7d0d2b8",
+      "End": "280e926433564b6281cefd8e3c74fcf2",
+      "Id": "d2ed7da24e6e43588cb3b0c0db119668",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b66571cc8a0a4441b76f5003aaac6235",
+      "End": "cff9a0e0f89f420bb2c20dc03580b3ae",
+      "Id": "c7e8d8b84d4f4389b9c0f00372f896ad",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ebac195bcdcb4f01864e14da045f1670",
+      "End": "f729c0abec044b179f6986b5034acf92",
+      "Id": "d6f5a7b1bce64a2f8a82a7d32b851eba",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "e9f8defcacc442bcb98c5d2f06f0e81d",
+      "End": "17f8363d5d8a4560a020d860cfba12bb",
+      "Id": "f27d89e862a04213bd4ca965d89f2037",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a6f291bf8bd142e8aac8275b9636d010",
+      "End": "8b337f616a3c42f1a1c5ebe4078d330b",
+      "Id": "6fd90d31dbca41c6a46d7d68d84286d9",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5424faa7143e40b2ab5638a26b9a45f9",
+      "End": "3e0505d040394a23be57986ae7742c01",
+      "Id": "b74ebc7ffddb49f5af67205ee747f382",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5424faa7143e40b2ab5638a26b9a45f9",
+      "End": "71e7da29e33c421cba72829179eec5b7",
+      "Id": "12d1fa1519474500a03852d309aeb8e3",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a90aa755c1e3414faee04c8cf8981e0e",
+      "End": "babb731224e64b00844068c4a4b21813",
+      "Id": "51dbd6b476de45548a54e9a5bf99fdb2",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a90aa755c1e3414faee04c8cf8981e0e",
+      "End": "a3ef638b56634e6494431c0d1fc8c22b",
+      "Id": "be3b7cf346c74abda1ffc11c1d3ed535",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b7e82f892dd24327a25ed42cd3930dca",
+      "End": "c610d79ad3c84b2693808d94dad57adc",
+      "Id": "7abde4475a0a48a39c8789c8038a390a",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [
+    "280a37da-1a5d-4b12-87ed-bdaeb924461d",
+    "3b6ddd8b-fd2e-4afd-8f82-ddeb19e1c420",
+    "67213d40-841d-4b3d-9a3a-6371f965a4b3"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Dynamo → Shapely.dyf",
+      "ReferenceType": "DYFFile",
+      "Nodes": [
+        "77c3152745a146a4b88857d1a882561a",
+        "1fc066813c6d4be3b6192df2d789a719"
+      ]
+    },
+    {
+      "Name": "Shp_SharedPaths.dyf",
+      "ReferenceType": "DYFFile",
+      "Nodes": [
+        "acc0b78018cc4eb188c119b4d3303796"
+      ]
+    },
+    {
+      "Name": "Shapely → Dynamo.dyf",
+      "ReferenceType": "DYFFile",
+      "Nodes": [
+        "d7db4b45bb444636b39ab169435e4ae6"
+      ]
+    }
+  ],
+  "EnableLegacyPolyCurveBehavior": true,
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Propriétés",
+      "Version": "3.4",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "9.0",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "Aucun",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "3.4.1.7055",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "_Aperçu en arrière-plan",
+      "EyeX": -2.647068738937378,
+      "EyeY": 31.179943084716797,
+      "EyeZ": 12.231637954711914,
+      "LookX": -0.06740021705627441,
+      "LookY": -21.872697830200195,
+      "LookZ": -12.435691833496094,
+      "UpX": -0.004028452094644308,
+      "UpY": 0.6691290140151978,
+      "UpZ": -0.7431352734565735
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Id": "7bb603bb1f3945238f9bee6745b69fca",
+        "Name": "Rectangle.ByWidthLength",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": false,
+        "X": 438.0,
+        "Y": 257.0
+      },
+      {
+        "Id": "c9124a8403b1463f9c3c81fad9730609",
+        "Name": "Code Block",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 218.0,
+        "Y": 342.0
+      },
+      {
+        "Id": "8e12e38b80f5454f90a2b4b5e5fafedc",
+        "Name": "Geometry.Translate",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": false,
+        "X": 442.0,
+        "Y": 457.0
+      },
+      {
+        "Id": "4f5d828acc594f73b4b14e52abd79c01",
+        "Name": "Surface.ByPatch",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 777.0,
+        "Y": 259.0
+      },
+      {
+        "Id": "1c026b9e0ad840e6aaed0483c8109203",
+        "Name": "Surface.ByPatch",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 781.0,
+        "Y": 464.0
+      },
+      {
+        "Id": "77c3152745a146a4b88857d1a882561a",
+        "Name": "Dynamo → Shapely",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 1097.0,
+        "Y": 468.0
+      },
+      {
+        "Id": "1fc066813c6d4be3b6192df2d789a719",
+        "Name": "Dynamo → Shapely",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 1095.0,
+        "Y": 265.0
+      },
+      {
+        "Id": "acc0b78018cc4eb188c119b4d3303796",
+        "Name": "Shp_SharedPaths",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 1474.0,
+        "Y": 364.0
+      },
+      {
+        "Id": "d7db4b45bb444636b39ab169435e4ae6",
+        "Name": "Shapely → Dynamo",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": false,
+        "X": 1836.0,
+        "Y": 367.0
+      },
+      {
+        "Id": "1935c6d198504e1c84d0cd2d65da195c",
+        "Name": "GeometryColor.ByGeometryColor",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 2174.0,
+        "Y": 403.0
+      },
+      {
+        "Id": "20bfc99d36e440a08eed80f20a14ea92",
+        "Name": "Color Palette",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 1969.3374476484173,
+        "Y": 517.7366100230919
+      },
+      {
+        "Id": "510ff804f344465ab61dab1981964c8b",
+        "Name": "Watch",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 1817.8477482584808,
+        "Y": 206.65998976869093
+      },
+      {
+        "Id": "385f7667b4664eaf846a6f95d95989cb",
+        "Name": "Watch",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 2178.958613331116,
+        "Y": 563.758511896075
+      }
+    ],
+    "Annotations": [],
+    "X": -115.19170399667655,
+    "Y": -47.51818993683008,
+    "Zoom": 0.7476928171233252
+  }
+}

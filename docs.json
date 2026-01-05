@@ -71,11 +71,29 @@
               {
                 "group": "Operation",
                 "pages": [
-                  "api-reference/Operation/Dynamo→Shapely",
-                  "api-reference/Operation/Shapely→Dynamo",
-                  "api-reference/Operation/Shapely→Numpy",
-                  "api-reference/Operation/Numpy→Shapely",
-                  "api-reference/Operation/GeoJSON→Shapely"
+                  "api-reference/Operation/Shp_Area",
+                  "api-reference/Operation/Shp_BoundingBox",
+                  "api-reference/Operation/Shp_BoundingCircle",
+                  "api-reference/Operation/Shp_Boundary",
+                  "api-reference/Operation/Shp_BuildBoundary",
+                  "api-reference/Operation/Shp_Centroid",
+                  "api-reference/Operation/Shp_Contains",
+                  "api-reference/Operation/Shp_Distance",
+                  "api-reference/Operation/Shp_GetPoint",
+                  "api-reference/Operation/Shp_LabelPoint",
+                  "api-reference/Operation/Shp_Length",
+                  "api-reference/Operation/Shp_NearestPoint",
+                  "api-reference/Operation/Shp_Oriented",
+                  "api-reference/Operation/Shp_Perimeter",                
+                  "api-reference/Operation/Shp_PerimeterInterior",
+                  "api-reference/Operation/Shp_Segmentize", 
+                  "api-reference/Operation/Shp_SkeletonPruning",
+                  "api-reference/Operation/Shp_SharedPaths",
+                  "api-reference/Operation/Shp_Simplify",
+                  "api-reference/Operation/Shp_ShortLine",
+                  "api-reference/Operation/Shp_Touches",
+                  "api-reference/Operation/Shp_TouchesByDistance"
+
                 ]
               }
             ]
