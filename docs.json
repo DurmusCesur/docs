@@ -64,11 +64,15 @@
             "group": "Modifier",
             "pages": 
             [
-              "api-reference/Modifier/Dynamo→Shapely",
-              "api-reference/Modifier/Shapely→Dynamo",
-              "api-reference/Modifier/Shapely→Numpy",
-              "api-reference/Modifier/Numpy→Shapely",
-              "api-reference/Modifier/GeoJSON→Shapely"
+              "api-reference/Modifier/Shp_Difference",
+              "api-reference/Modifier/Shp_Intersection",
+              "api-reference/Modifier/Shp_RevDifference",
+              "api-reference/Modifier/Shp_Union",
+              "api-reference/Modifier/Shp_Rotate",
+              "api-reference/Modifier/Shp_RotateSkew",
+              "api-reference/Modifier/Shp_Scale",
+              "api-reference/Modifier/Shp_Offset",
+              "api-reference/Modifier/Shp_Split"
             ]
           },
           {
