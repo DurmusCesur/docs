@@ -1,12 +1,19 @@
 ---
 title: 'Shapely BuildBoundary'
 description: '
-Creates a geometry that defines the area surrounding it. This process is used to define the area covered by the geometry.
+This creates a geometry that defines the surrounding area. This operation defines the area covered by the geometry.
+
+
+**All lines belonging to the geometry are stored within the method.**
+
 ' 
 ---
 
 <Note>
 I recommend working with polygons for the best results!
+
+Interior lines(holes) are not lost; they are simply not displayed in the method result. Use the Shapely.PerimeterInterior method to retrieve interior lines(holes)!
+
 </Note>
 
 ### An example of transformations
