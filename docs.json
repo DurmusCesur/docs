@@ -96,6 +96,86 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Machine Learning Guide",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Machine Learning",
+            "pages": [
+              {
+                "group": "Analysis",
+                "pages": [
+                  "api-reference/Analysis/Cluster_Quality",
+                  "api-reference/Analysis/K-Finder",
+                  "api-reference/Analysis/Feature_Overlay_Analysis",
+                  "api-reference/Analysis/Mean_Absolute_Error",
+                  "api-reference/Analysis/PCA"
+                ]
+              },
+              {
+                "group": "Model",
+                "pages": [
+                  {
+                    "group": "Classifier",
+                    "pages": [
+                      "api-reference/Model/Classifier/Gradient Boosting Classifier",
+                      "api-reference/Model/Classifier/KNN Classifier",
+                      "api-reference/Model/Classifier/Logistic Regression",
+                      "api-reference/Model/Classifier/RandomForest Classifier",
+                      "api-reference/Model/Classifier/Support Vector Classification"
+                    ]
+                  },
+                  {
+                    "group": "Clustering",
+                    "pages": [
+                      "api-reference/Model/Clustering/Gaussian Mixture",
+                      "api-reference/Model/Clustering/K-Means",
+                      "api-reference/Model/Clustering/Spectral Clustering"
+                    ]
+                  },
+                  {
+                    "group": "Density",
+                    "pages": [
+                      "api-reference/Model/Density/Isolation Forest",
+                      "api-reference/Model/Density/Density Clustering"
+                    ]
+                  },
+                  {
+                    "group": "Regression",
+                    "pages": [
+                      "api-reference/Model/Regression/GradientBoosting Regressor",
+                      "api-reference/Model/Regression/Huber Regressor",
+                      "api-reference/Model/Regression/Lasso Regressor",
+                      "api-reference/Model/Regression/Linear Regressor",
+                      "api-reference/Model/Regression/RandomForest Regressor",
+                      "api-reference/Model/Regression/Support Vector Regression"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "PreProcessing",
+                "pages": [
+                  "api-reference/PreProcessing/Encoder",
+                  "api-reference/PreProcessing/Decoder",
+                  "api-reference/PreProcessing/Feature_Extractor",
+                  "api-reference/PreProcessing/Feature_Joiner",
+                  "api-reference/PreProcessing/Feature_Scaler"
+                ]
+              },
+              {
+                "group": "Serialization",
+                "pages": [
+                  "api-reference/Serialization/Model→Load",
+                  "api-reference/Serialization/Model→Save",
+                  "api-reference/Serialization/Model→Predict"
+                ]
+              }
+            ]
           }
         ]
       }
