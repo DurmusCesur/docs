@@ -1,5 +1,5 @@
 ---
-title: 'Density Clustering'
+title: 'DBSCAN(Density Clustering)'
 description: '
 Density Clustering (DBSCAN) groups together points that are closely packed in space and marks points in low-density regions as outliers. It does not require the number of clusters to be specified in advance.
 
@@ -9,7 +9,9 @@ The algorithm discovers clusters automatically and labels isolated points as noi
 ---
 
 <Note>
-DBSCAN is the only clustering algorithm in this package that can automatically **detect outliers** and determine the number of clusters on its own. The **eps** and **min_samples** parameters control how dense a region must be to form a cluster.
+- DBSCAN is the only clustering algorithm in this package that can automatically **detect outliers** and determine the number of clusters on its own. 
+- NeighborhoodDistance, Estimated potential neighbor distance
+- MinNeighbors, Estimated potential neighbor count but if there is no estimation, it can be estimated automatically with "Auto" option.
 
 </Note>
 
@@ -18,5 +20,3 @@ DBSCAN is the only clustering algorithm in this package that can automatically *
 
 - **Noise detection**: Identify irregular or outlier geometries in a set of building elements.
 - **Unknown number of clusters**: When you do not know how many groups exist in your spatial data.
-- **Irregular cluster shapes**: DBSCAN can find clusters of arbitrary shape, making it suitable for complex spatial distributions.
-

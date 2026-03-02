@@ -4,12 +4,13 @@ description: '
 K-Nearest Neighbors (KNN) classifies a data point based on the majority class of its nearest neighbors. It finds the K closest training samples and assigns the most common class among them.
 
 
-This simple yet effective algorithm requires no training phase — it memorizes the data and makes decisions at prediction time.
+This simple yet effective algorithm requires no training phase. It memorizes the data and makes decisions at prediction time.
 '
 ---
 
 <Note>
-KNN is sensitive to the scale of features. Always use the **Feature Scaler** node to normalize your data before applying KNN. Use the **K-Finder** analysis node to determine the optimal K value.
+- KNN is sensitive to the scale of features. Always use the **Feature Scaler** node to normalize your data before applying KNN. Use the **K-Finder** analysis node to determine the optimal K value.
+- Ideal for initial exploration of classification problems before trying more complex models.
 
 </Note>
 
@@ -18,5 +19,4 @@ KNN is sensitive to the scale of features. Always use the **Feature Scaler** nod
 
 - **Room similarity detection**: Find rooms most similar in shape and area to a reference room.
 - **Zone classification**: Assign zones (residential, commercial, industrial) based on spatial properties.
-- **Quick prototyping**: Ideal for initial exploration of classification problems before trying more complex models.
 

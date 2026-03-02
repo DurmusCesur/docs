@@ -132,8 +132,8 @@
                   {
                     "group": "Clustering",
                     "pages": [
-                      "api-reference/Model/Clustering/Gaussian Mixture",
                       "api-reference/Model/Clustering/K-Means",
+                      "api-reference/Model/Clustering/Gaussian Mixture",
                       "api-reference/Model/Clustering/Spectral Clustering"
                     ]
                   },
@@ -141,7 +141,7 @@
                     "group": "Density",
                     "pages": [
                       "api-reference/Model/Density/Isolation Forest",
-                      "api-reference/Model/Density/Density Clustering"
+                      "api-reference/Model/Density/DBSCAN(Density Clustering)"
                     ]
                   },
                   {
