@@ -1,19 +1,16 @@
 ---
 title: 'Model → Predict'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+Model Predict uses a trained (or loaded) machine learning model to make predictions on new, unseen data. It takes input features and returns the model output — class labels for classifiers, cluster assignments for clustering, or numerical values for regressors.
 
-' 
+
+This is the final step in the ML pipeline where the model is applied to real data.
+'
 ---
 
 <Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
+The input features for prediction **must have the same structure** (same number and order of features) as the data used during training. Use the same preprocessing steps (Feature Extractor, Feature Scaler, Encoder) that were applied to the training data.
+
 </Note>
 
-### An example of transformations
 
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>

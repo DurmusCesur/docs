@@ -1,4 +1,22 @@
 ---
 title: 'Support Vector Regression'
-description: 'Documentation for Support Vector Regression'
+description: '
+Support Vector Regression (SVR) fits a function within an epsilon-tube around the data, tolerating small errors while penalizing larger deviations. Kernel functions allow it to model complex non-linear relationships.
+
+
+SVR works best on small to medium-sized datasets where high accuracy is needed.
+'
 ---
+
+<Note>
+For best results, always scale your features using the **Feature Scaler** node before applying SVR. The **kernel** parameter determines the type of relationship modeled — use `rbf` for non-linear patterns or `linear` for simpler relationships.
+
+</Note>
+
+
+### Use Cases
+
+- **Precise non-linear regression**: When the relationship between features and target is non-linear and you need high accuracy on a small to medium dataset.
+- **Controlled error tolerance**: When you can specify an acceptable range of error for predictions.
+- **High-dimensional feature spaces**: SVR handles many features efficiently when the number of data points is moderate.
+

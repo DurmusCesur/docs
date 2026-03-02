@@ -1,19 +1,16 @@
 ---
 title: 'Feature Joiner'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+Feature Joiner combines multiple separate feature lists into a single unified feature matrix. It merges individual feature columns into one structured dataset.
 
-' 
+
+This is necessary when your features come from different sources or calculations and need to be combined before training.
+'
 ---
 
 <Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
+All feature lists being joined **must have the same length** . Ensure each list corresponds to the same set of geometries in the same order.
+
 </Note>
 
-### An example of transformations
 
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>

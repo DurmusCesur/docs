@@ -1,19 +1,16 @@
 ---
 title: 'Encoder'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+Encoder converts categorical (text-based) data into numerical values that machine learning algorithms can process. It transforms labels like "Residential", "Commercial", "Industrial" into numbers like " 0, 1, 2 " .
 
-' 
+
+This is an essential preprocessing step because most ML models only work with numerical inputs.
+'
 ---
 
 <Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
+Always use the Encoder **before** training a model if your data contains text-based categories. The encoded values must remain consistent between training and prediction.
+
 </Note>
 
-### An example of transformations
 
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>

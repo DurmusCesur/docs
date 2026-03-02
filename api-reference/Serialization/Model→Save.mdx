@@ -1,19 +1,15 @@
 ---
 title: 'Model → Save'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+Model Save exports a trained machine learning model to a file on disk so it can be loaded and reused later. It serializes the model state, preserving all learned parameters and configurations.
 
-' 
+
+This eliminates the need to retrain the model every time you want to make predictions.
+'
 ---
 
 <Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
+Save your model **after training is complete** and you are satisfied with its performance. The saved file contains everything needed to make predictions you do not need to save the training data separately.
+
 </Note>
 
-### An example of transformations
-
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>

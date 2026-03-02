@@ -1,4 +1,22 @@
 ---
 title: 'Support Vector Classification'
-description: 'Documentation for Support Vector Classification'
+description: '
+Support Vector Classification (SVC) finds the optimal boundary (hyperplane) that separates data points of different classes with the maximum margin. It uses kernel functions to handle complex, non-linear decision boundaries.
+
+
+SVC is highly effective in high-dimensional spaces and works well when the number of features is large.
+'
 ---
+
+<Note>
+SVC can be slower to train on very large datasets compared to tree-based methods. For best results, always scale your features using the **Feature Scaler** node before applying SVC.
+
+</Note>
+
+
+### Use Cases
+
+- **Precise boundary classification**: When you need a clear, well-defined boundary between classes (e.g., separating facade types based on geometric ratios).
+- **Small to medium datasets**: SVC excels when the dataset is not too large but requires high classification accuracy.
+- **Complex pattern recognition**: When data has intricate, non-linear class boundaries that simpler models cannot capture.
+

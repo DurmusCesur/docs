@@ -1,4 +1,22 @@
 ---
 title: 'GradientBoosting Regressor'
-description: 'Documentation for GradientBoosting Regressor'
+description: '
+Gradient Boosting Regressor builds sequential decision trees where each new tree corrects the prediction errors of the previous ones. It predicts continuous numerical values with high accuracy.
+
+
+This sequential correction process makes it one of the most powerful regression methods, especially for complex non-linear relationships.
+'
 ---
+
+<Note>
+Gradient Boosting Regressor requires careful tuning of **learning_rate** and **n_estimators**. A smaller learning rate paired with more trees often gives better results but takes longer to train.
+
+</Note>
+
+
+### Use Cases
+
+- **Area prediction**: Predict the area of a geometry based on its perimeter, bounding box, and other spatial features.
+- **Energy performance estimation**: Estimate building energy consumption based on geometric and spatial characteristics.
+- **Cost estimation**: Predict construction costs based on geometric measurements of building elements.
+

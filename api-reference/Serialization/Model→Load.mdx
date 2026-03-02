@@ -1,19 +1,11 @@
 ---
 title: 'Model → Load'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+Model Load restores a previously saved machine learning model from a file so it can be reused for predictions without retraining. It reads the model file and reconstructs the trained model in memory.
 
-' 
+
+This allows you to train a model once and use it repeatedly across different Dynamo sessions.
+'
 ---
 
-<Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
-</Note>
 
-### An example of transformations
-
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>

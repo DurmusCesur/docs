@@ -1,19 +1,14 @@
 ---
 title: 'K-Finder'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+K-Finder automatically determines the optimal number of clusters (K) for your data using methods like the Elbow Method and Silhouette Analysis. It tests different K values and recommends the best one.
 
-' 
+
+This removes the guesswork from choosing K for algorithms like K-Means and Gaussian Mixture.
+'
 ---
 
 <Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
+Always run K-Finder **before** using K-Means, Gaussian Mixture, or Spectral Clustering. The suggested K value is a recommendation you may want to try nearby values (K±1) and compare results using the **Cluster Quality** node.
+
 </Note>
-
-### An example of transformations
-
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>

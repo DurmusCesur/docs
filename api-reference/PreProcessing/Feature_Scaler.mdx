@@ -1,19 +1,16 @@
 ---
 title: 'Feature Scaler'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+Feature Scaler normalizes feature values to a common scale so that no single feature dominates the model due to its larger numerical range. It transforms all features to have comparable magnitudes.
 
-' 
+
+This is a critical preprocessing step for distance-based algorithms like KNN, SVC, and SVR.
+'
 ---
 
 <Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
+Always apply Feature Scaler **before** using distance-based models (KNN, SVC, SVR, K-Means). Without scaling, features with larger ranges (e.g., area in m²) will dominate over features with smaller ranges (e.g., compactness ratio 0–1). Tree-based models (Random Forest, Gradient Boosting) do **not** require scaling.
+
 </Note>
 
-### An example of transformations
 
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>

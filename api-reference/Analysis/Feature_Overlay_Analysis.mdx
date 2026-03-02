@@ -1,19 +1,22 @@
 ---
 title: 'Feature Overlay Analysis'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+Feature Overlay Analysis visualizes and compares the distribution of features across different clusters or classes. It helps you understand how each feature contributes to the separation between groups.
 
-' 
+
+This analysis reveals which features are most distinctive for each cluster or class.
+'
 ---
 
 <Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
+Use Feature Overlay Analysis **after** clustering or classification to understand your results. It is especially useful for identifying which geometric properties (area, perimeter, compactness) differ most between groups.
+
 </Note>
 
-### An example of transformations
 
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>
+### Use Cases
+
+- **Cluster interpretation**: Understand what makes each cluster unique by comparing feature distributions across groups.
+- **Feature relevance**: Identify which geometric properties are most useful for distinguishing between categories.
+- **Result validation**: Verify that clusters represent meaningful differences in the data, not random noise.
+

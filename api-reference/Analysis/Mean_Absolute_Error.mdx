@@ -1,19 +1,21 @@
 ---
 title: 'Mean Absolute Error'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+Mean Absolute Error (MAE) measures the average magnitude of errors between predicted and actual values. It calculates the mean of the absolute differences, giving you a clear picture of how far off predictions are on average.
 
-' 
+'
 ---
 
 <Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
+- **MAE is expressed in the same units** as your target variable, making it easy to interpret. For example, if predicting area in m², an MAE of 5.0 means predictions are off by 5 m² on average. Use MAE to compare different regression models and choose the most accurate one.
+
+- **Lower MAE values indicate better prediction accuracy**
 </Note>
 
-### An example of transformations
 
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>
+### Use Cases
+
+- **Model evaluation**: Measure how accurately your regression model predicts continuous values.
+- **Model comparison**: Compare MAE scores across different algorithms (Linear, Random Forest, Gradient Boosting) to select the best one.
+- **Performance monitoring**: Track prediction accuracy as you add more features or data to your training set.
+

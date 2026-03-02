@@ -1,19 +1,22 @@
 ---
 title: 'Feature Extractor'
 description: '
-Converts Dynamo geometry to Shapely geometry. 
+Feature Extractor automatically calculates geometric properties **Area, Compactness, AspectRatio, Solidity, Rectangularity, CentroidX, CentroidY** from Shapely geometry objects and organizes them into a structured feature set ready for machine learning.
 
-' 
+
+It eliminates the need to manually extract and organize geometric measurements.
+'
 ---
 
 <Note>
-Unfortunately, without this conversion, other methods belonging to the Shapely package cannot be used!
+Feature Extractor generates a consistent set of numerical features from any Shapely geometry. This ensures all your data points have the same feature structure, which is **required** by all ML models.
+
 </Note>
 
-### An example of transformations
 
-<a href="/images/Dynamo-Shapely.png" target="_blank">
-  
-    <img src="/images/Dynamo-Shapely.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>
+### Use Cases
+
+- **Automated feature creation**: Automatically extract area, perimeter, centroid coordinates, bounding box dimensions, and other properties from geometries.
+- **Batch processing**: Extract features from hundreds of geometries at once for large-scale analysis.
+- **ML pipeline preparation**: Create the input feature matrix needed for training classification, clustering, or regression models.
+

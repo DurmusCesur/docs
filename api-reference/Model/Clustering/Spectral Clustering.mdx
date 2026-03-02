@@ -1,4 +1,22 @@
 ---
 title: 'Spectral Clustering'
-description: 'Documentation for Spectral Clustering'
+description: '
+Spectral Clustering uses a similarity graph and its mathematical properties (eigenvalues) to discover complex, non-convex cluster shapes that traditional algorithms like K-Means cannot handle.
+
+
+It is particularly effective when clusters have irregular, non-spherical boundaries.
+'
 ---
+
+<Note>
+Spectral Clustering excels at finding clusters with **non-convex shapes** (e.g., L-shaped, crescent-shaped regions). If K-Means fails to capture the natural grouping in your data, try Spectral Clustering.
+
+</Note>
+
+
+### Use Cases
+
+- **Complex spatial patterns**: When building layouts or urban patterns form non-convex shapes (e.g., L-shaped building clusters, ring-shaped arrangements).
+- **Connectivity-based grouping**: Group geometries based on their adjacency relationships rather than just distance.
+- **Irregular cluster shapes**: When K-Means produces unsatisfactory results because clusters are not spherical.
+

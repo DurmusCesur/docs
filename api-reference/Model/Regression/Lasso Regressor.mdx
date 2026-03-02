@@ -1,4 +1,22 @@
 ---
 title: 'Lasso Regressor'
-description: 'Documentation for Lasso Regressor'
+description: '
+Lasso Regression adds L1 regularization to linear regression, which can shrink irrelevant feature coefficients to exactly zero. This means Lasso not only predicts values but also performs automatic feature selection.
+
+
+It is the best choice when you suspect only a subset of your features is truly relevant.
+'
 ---
+
+<Note>
+The **alpha** parameter controls regularization strength. A higher alpha forces more feature coefficients to zero, creating a simpler model with fewer features. Start with the default and adjust based on results.
+
+</Note>
+
+
+### Use Cases
+
+- **Feature selection**: Discover which geometric features (area, perimeter, centroid, bounding box) are truly important for your prediction task.
+- **Interpretable models**: When you need a simple, transparent model that clearly shows which features drive the prediction.
+- **High-dimensional data**: When the number of features is large relative to the number of samples.
+
