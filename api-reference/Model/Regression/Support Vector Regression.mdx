@@ -9,9 +9,14 @@ SVR works best on small to medium-sized datasets where high accuracy is needed.
 ---
 
 <Note>
-For best results, always scale your features using the **Feature Scaler** node before applying SVR. The **kernel** parameter determines the type of relationship modeled
-
+Choice of kernel is critical:
+- **Linear kernel** → Behaves like linear regression
+- **RBF kernel** → Captures non-linear patterns
+- **Poly kernel** → Models curved relationships
 </Note>
 
 
-
+### Use Cases
+- **Energy prediction models**
+- **Performance optimization** problems with complex geometry interactions
+- **Façade performance prediction** based on multiple interacting parameters

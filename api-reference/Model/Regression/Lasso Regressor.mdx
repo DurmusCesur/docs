@@ -9,14 +9,19 @@ It is the best choice when you suspect only a subset of your features is truly r
 ---
 
 <Note>
-The **alpha** parameter controls regularization strength. A higher alpha forces more feature coefficients to zero, creating a simpler model with fewer features. Start with the default and adjust based on results.
+**Feature scaling is required**
+Lasso is sensitive to feature scale. Standardization (e.g., StandardScaler) is usually necessary.
+
+**Regularization strength (alpha) tuning is critical**
+- If alpha is too large → underfitting.
+- If alpha is too small → behaves like ordinary linear regression.
 
 </Note>
 
-
 ### Use Cases
 
-- **Feature selection**: Discover which geometric features (area, perimeter, centroid, bounding box) are truly important for your prediction task.
-- **Interpretable models**: When you need a simple, transparent model that clearly shows which features drive the prediction.
-- **High-dimensional data**: When the number of features is large relative to the number of samples.
+- **Parametric design optimization**
+- **Energy performance prediction**: Predict building energy consumption based on geometric and spatial characteristics.
+- **Cost estimation models**: Predict construction costs based on geometric measurements of building elements.
+- **Structural performance approximation**: Predict structural performance based on geometric and spatial characteristics.
 

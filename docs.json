@@ -147,11 +147,11 @@
                   {
                     "group": "Regression",
                     "pages": [
-                      "api-reference/Model/Regression/GradientBoosting Regressor",
+                      "api-reference/Model/Regression/Gradient Boosting Regressor",
                       "api-reference/Model/Regression/Huber Regressor",
                       "api-reference/Model/Regression/Lasso Regressor",
                       "api-reference/Model/Regression/Linear Regressor",
-                      "api-reference/Model/Regression/RandomForest Regressor",
+                      "api-reference/Model/Regression/Random Forest Regressor",
                       "api-reference/Model/Regression/Support Vector Regression"
                     ]
                   }
