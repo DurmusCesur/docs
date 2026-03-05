@@ -27,7 +27,7 @@
           {
             "group": "Shapely Guide",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/Shapely Introduction"
             ]
           },
           {
@@ -100,20 +100,30 @@
           {
             "group": "Machine Learning Guide",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/ML Introduction"
             ]
           },
           {
             "group": "Machine Learning",
             "pages": [
               {
+                "group": "PreProcessing",
+                "pages": [
+                  "api-reference/PreProcessing/Feature_Extractor",
+                  "api-reference/PreProcessing/Feature_Joiner",
+                  "api-reference/PreProcessing/Feature_Scaler",
+                  "api-reference/PreProcessing/Encoder",
+                  "api-reference/PreProcessing/Decoder"
+                ]
+              },
+              {
                 "group": "Analysis",
                 "pages": [
-                  "api-reference/Analysis/Cluster_Quality",
-                  "api-reference/Analysis/K-Finder",
+                  "api-reference/Analysis/PCA",
                   "api-reference/Analysis/Feature_Overlay_Analysis",
-                  "api-reference/Analysis/Mean_Absolute_Error",
-                  "api-reference/Analysis/PCA"
+                  "api-reference/Analysis/K-Finder",
+                  "api-reference/Analysis/Cluster_Quality",
+                  "api-reference/Analysis/Mean_Absolute_Error"
                 ]
               },
               {
@@ -122,10 +132,10 @@
                   {
                     "group": "Classifier",
                     "pages": [
+                      "api-reference/Model/Classifier/Logistic Regression",
+                      "api-reference/Model/Classifier/RandomForest Classifier", 
                       "api-reference/Model/Classifier/Gradient Boosting Classifier",
                       "api-reference/Model/Classifier/KNN Classifier",
-                      "api-reference/Model/Classifier/Logistic Regression",
-                      "api-reference/Model/Classifier/RandomForest Classifier",
                       "api-reference/Model/Classifier/Support Vector Classification"
                     ]
                   },
@@ -147,24 +157,14 @@
                   {
                     "group": "Regression",
                     "pages": [
+                      "api-reference/Model/Regression/Linear Regressor",
+                      "api-reference/Model/Regression/Random Forest Regressor",
                       "api-reference/Model/Regression/Gradient Boosting Regressor",
                       "api-reference/Model/Regression/Huber Regressor",
                       "api-reference/Model/Regression/Lasso Regressor",
-                      "api-reference/Model/Regression/Linear Regressor",
-                      "api-reference/Model/Regression/Random Forest Regressor",
                       "api-reference/Model/Regression/Support Vector Regression"
                     ]
                   }
-                ]
-              },
-              {
-                "group": "PreProcessing",
-                "pages": [
-                  "api-reference/PreProcessing/Encoder",
-                  "api-reference/PreProcessing/Decoder",
-                  "api-reference/PreProcessing/Feature_Extractor",
-                  "api-reference/PreProcessing/Feature_Joiner",
-                  "api-reference/PreProcessing/Feature_Scaler"
                 ]
               },
               {
