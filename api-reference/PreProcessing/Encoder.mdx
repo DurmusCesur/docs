@@ -4,13 +4,19 @@ description: '
 Encoder converts categorical (text-based) data into numerical values that machine learning algorithms can process. It transforms labels like "Residential", "Commercial", "Industrial" into numbers like " 0, 1, 2 " .
 
 
-This is an essential preprocessing step because most ML models only work with numerical inputs.
+This is an essential preprocessing step because ML models only work with numerical inputs.
 '
 ---
 
 <Note>
 Always use the Encoder **before** training a model if your data contains text-based categories. The encoded values must remain consistent between training and prediction.
 
+- **Label Encoder** : True
+- **One Hot Encoder** : False
 </Note>
 
-
+<a href="/images/ML/Encoder.png" target="_blank">
+  
+    <img src="/images/ML/Encoder.png" className="pointer-events-none" 
+    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
+</a>
