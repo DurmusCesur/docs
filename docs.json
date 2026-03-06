@@ -133,7 +133,7 @@
                     "group": "Classifier",
                     "pages": [
                       "api-reference/Model/Classifier/Logistic Regression",
-                      "api-reference/Model/Classifier/RandomForest Classifier", 
+                      "api-reference/Model/Classifier/Random Forest Classifier", 
                       "api-reference/Model/Classifier/Gradient Boosting Classifier",
                       "api-reference/Model/Classifier/KNN Classifier",
                       "api-reference/Model/Classifier/Support Vector Classification"
