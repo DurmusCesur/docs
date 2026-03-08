@@ -2,42 +2,55 @@
 title: 'Introduction'
 description: '
 
-In this section, you will find a guide and a sample Revit file **(Version: Revit2026)** for testing the codes.
+No coding, no external tools - just connect the nodes and let your geometric data reveal its patterns, make predictions, and uncover insights that would be difficult to discover manually.
 
 
-Shapely uses a geometric language similar to Designscript. However, unlike Dynamo, it is not necessary to convert each operation into geometry. This enables fast processing, even with complex geometries, and ensures that no geometric information is lost during transformations.
+
+Whether you are classifying building types, predicting structural properties, or discovering hidden patterns in spatial data, this package makes machine learning accessible to every AEC professional.
 
 '
 ---
 
+
+## What is Machine Learning?
+
+Machine learning is a method where computers **learn from data** instead of being explicitly programmed. Rather than writing rules like *"if area > 100 and perimeter < 50, then classify as Type A"*, you provide examples and the algorithm discovers the patterns on its own.
+
+Think of it like this: instead of telling the computer **how to classify rooms**, you show it hundreds of already-classified rooms and it learns **what makes each type different**.
+
+
+## Why Machine Learning in Dynamo?
+
+As AEC professionals, we work with enormous amounts of geometric and spatial data every day — building elements, room layouts, structural components, urban plans. Machine learning helps us:
+
+- **Find patterns** we cannot see manually in large datasets
+- **Automate repetitive classification** tasks that would take hours by hand
+- **Predict properties** of new elements based on learned relationships
+- **Detect anomalies** and quality issues in building models automatically
+
+
 <Note>
-Only the definition of geometry has changed. 
+You do **not** need any programming or data science background to use this package. Every algorithm is wrapped in a simple Dynamo node — just connect your data and get results.
+
 </Note>
 
-### An example of transformations
 
-<a href="/images/Donusumler.png" target="_blank">
-    <img src="/images/Donusumler.png" 
-    className="pointer-events-none"
+## Package Overview
+
+<a href="/images/ML/ML_Pipeline.png" target="_blank">
+  
+    <img src="/images/ML/ML_Pipeline.png" className="pointer-events-none" 
     style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
 </a>
 
-### An example of test
 
-<Frame>
-  <a href="https://github.com/DurmusCesur/docs/releases/download/Dyn/Conversion.dyn" download="Conversion.dyn">
-      <button className="bg-[#16A34A] text-white px-5 py-1 rounded-md hover:bg-[#15803D] transition-colors">
-        Conversion.dyn
-      </button>
-  </a>
-</Frame>
+## Which Model Should I Use?
 
-### Revit 2026
+| I want to... | Use this | Example |
+|--------------|----------|---------|
+| Classify elements into categories | **Classifier** | Room type, material type, zone category |
+| Find natural groups in data | **Clustering** | Building typologies, spatial zones |
+| Detect unusual/outlier elements | **Density** | Modeling errors, abnormal dimensions |
+| Predict a numerical value | **Regression** | Area, cost, energy consumption |
 
-<Frame>
-  <a href="https://github.com/DurmusCesur/docs/releases/download/Rvt/Shapely.rvt" download="Shapely.rvt">
-      <button className="bg-gradient-to-r from-blue-600 via-blue-450 to-blue-600 text-white px-6 py-1 rounded-lg shadow-lg hover:bg-gradient-to-l hover:from-blue-500 hover:to-blue-400 transition-all">
-        Shapely.rvt
-      </button>
-  </a>
-</Frame>
+
